@@ -1,26 +1,22 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './App.css'; // Asegúrate de ajustar la ruta a tu archivo de estilos si es necesario
+import Login from './Login'; // Importa el componente Login
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <header className="App-header">
+    <h2 className="text-sm">Acceder</h2>
+    <h3 className="text-sm">Usa tu cuenta de Unialpes</h3>
+    </header>
+      <main>
+        <Login /> {/* Renderiza el componente Login aquí */}
+      </main>
     </div>
   );
 }
 
 export default App;
+
+
