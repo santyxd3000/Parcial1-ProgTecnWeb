@@ -10,7 +10,6 @@ function Card(props){
 
 
     return (
-
             <div className="card_style" style= {{width: "18rem", height:"20rem"}} onClick={handleClick}>
             <img className="card-img-top" src={props.image} alt={props.partName} style= {{width: "18rem", height:"10rem"}} />
                 <div className="card-body">
@@ -20,8 +19,6 @@ function Card(props){
 
                 </div>
             </div>
-
-
     );
 }
 
