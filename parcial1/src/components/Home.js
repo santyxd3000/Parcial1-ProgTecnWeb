@@ -1,6 +1,3 @@
-
-import './home.css'
-
 import Card from './Card';
 import { Col, Row } from 'react-bootstrap';
 import { useEffect, useState } from 'react';
@@ -8,18 +5,12 @@ import { FormattedMessage } from "react-intl";
 
 
 import Detail from './Detaill';
-
 export default function Home(props){
-
     const [isbn, setIsbnToFind]= useState("");
       ;
-
-
-
       const handleCardClick = (id) => {
         setIsbnToFind(id);
       };
-
     const renderBooks = () => {
         const books_jx = props.books.map((car, index) => (
           <Col key={index} md={3}> {}
@@ -33,9 +24,7 @@ export default function Home(props){
               onClick={handleCardClick} 
             />
           </Col>
-        ));
-
-      
+        ));      
         const rows = [];
         for (let i = 0; i < books_jx.length; i += 4) {
           const row = books_jx.slice(i, i + 4);
@@ -44,45 +33,21 @@ export default function Home(props){
               {row}
             </Row>
           );
-        }
-      
+        }     
         return rows;
       };
-
-
-
     return (
-<section className="vh-100" >
-
-    <div className='title'><h1><FormattedMessage id = "title"/></h1></div>
-    <h2><FormattedMessage id = "editable"/>: {props.editable?<p>true</p>:<p>false</p>}</h2>
-
-
-    <div className="display_galeria">
-        
-
+<section >
+    <div ><h1><FormattedMessage id = "title"/></h1></div>
+    <div>
         <div>
-
         {renderBooks()}
-
-
         </div>
-
         {isbn!==""?
-
-        <div className='detail'>
-
+        <div >
             <Detail bookDetail ={props.books[isbn]} editable = {props.editable}/>
-
-
         </div>:true }
-
-
-
-
     </div>
   </section>
-
-
     );
 }

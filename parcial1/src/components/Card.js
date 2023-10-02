@@ -1,5 +1,4 @@
 
-import './home.css'
 
 function Card(props){
 

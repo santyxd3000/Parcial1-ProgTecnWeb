@@ -11,9 +11,9 @@ import React, {useEffect,useState} from 'react';
 
 function App() {
   const [editable, setEdit] = useState ( Math.random() < 0.5); 
-    const [data, setData] = useState([]); // Inicializa el estado con un arreglo vacío
+    const [data, setData] = useState([]);
         useEffect(() => {
-            fetch("")
+            fetch("https://my.api.mockaroo.com/parts?key=f97b3370") //Hecho con mockaroo
             .then((response) => response.json())
             .then((data) => {
                 setData(data); 
