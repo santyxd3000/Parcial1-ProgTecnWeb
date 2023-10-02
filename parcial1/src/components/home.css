@@ -1,0 +1,26 @@
+.display_galeria{
+
+    display: block;
+}
+
+
+.card_style{
+
+    margin: 0.5rem;
+}
+
+.vh-100 {
+
+    padding: 2rem;
+}
+
+.title {
+
+    justify-content: left;
+    padding: 2rem;
+
+}
+
+.vh-100{
+    justify-content: center;
+}

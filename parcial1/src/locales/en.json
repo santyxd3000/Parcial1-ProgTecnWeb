@@ -1,0 +1,18 @@
+{
+    "loginTitle": "Access",
+    "user": "Use Your Unialpes Account",
+    "email": "Formato de correo incorrecto",
+    "password": "Enter your Password",
+    "passwordFormat": "This password can not be entered",
+    "next":"Next",
+    "send":"Access",
+    "title":"Car Components",
+    "editable":"Editable",
+    "carMaker": "Car Maker",
+    "carModel": "Car Model",
+    "carYear": "Car Year",
+    "available":"Available Online",
+    "price":"Price",
+    "description":"Description"
+
+}

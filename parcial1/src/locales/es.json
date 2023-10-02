@@ -1,0 +1,18 @@
+{
+    "login": "Acceder",
+    "user": "Usa tu cuenta de UniAlpes",
+    "email": "Formato de correo incorrecto",
+    "password": "Contraseña",
+    "passwordFormat": "La contraseña no cumple con los requisitos",
+    "next":"Siguiente",
+    "send":"Enviar",
+    "title":"Partes de Carros",
+    "editable":"Editable",
+    "carMaker": "Empresa Fabricante",
+    "carModel": "Modelo",
+    "carYear": "Año del carro",
+    "available":"Se encuentra disponible",
+    "price":"Precio",
+    "description":"Descripción"
+
+}
